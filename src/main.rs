@@ -8,7 +8,7 @@ async fn main() -> Result<(), Error> {
     Ok(())
 }
 
-pub async fn handler(event: LambdaEvent<Value>) -> Result<Value, Error> {
-    // Ok(Value::String("hello world".to_string()))
-    Ok(event.payload)
+pub async fn handler(_event: LambdaEvent<Value>) -> Result<Value, Error> {
+    Ok(Value::String("hello world".to_string()))
+    // Ok(event.payload)
 }
