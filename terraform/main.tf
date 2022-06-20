@@ -7,8 +7,8 @@ provider "aws" {
 
 module "batch" {
   source                 = "./modules/lambda"
-  servicename            = "test"
-  local_existing_package = "../bootstrap.zip"
+  servicename            = "test"             # 適当な名前
+  local_existing_package = "../bootstrap.zip" # `make build` で作ったデプロイパッケージ
 }
 
 output "lambda_function_url" {

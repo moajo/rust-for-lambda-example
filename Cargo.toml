@@ -8,6 +8,6 @@ name = "bootstrap" # NOTE: lambdaのエントリポイント要件で固定値
 path = "src/main.rs"
 
 [dependencies]
-lambda_runtime = "0.5.1"
+lambda_runtime = "0.5.1" # lambdaのイベントの型等が入ってる
 serde_json = "1.0.81"
 tokio = { version = "1", features = ["full"] }
